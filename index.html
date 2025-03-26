@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>YAY! It’s BOGO</h1>
+
+  <!-- Box 1 -->
+  <div class="box middle" onclick="selectBox(1)">
+    <input type="radio" name="unit" id="unit1">
+    <label for="unit1">
+      <span>1 Unit</span>
+      <span class="badge popular-badge">10% Off</span>
+      <div class="price">
+        <span>$10.00 USD</span>
+        <del>$24.00 USD</del>
+      </div>
+      <p>Standard Price</p>
+    </label>
+  </div>
+
+  <!-- Box 2 -->
+  <div class="box middle" onclick="selectBox(2)">
+    <input type="radio" name="unit" id="unit2">
+    <label for="unit2">
+      <span>2 Unit</span>
+      <span class="badge popular-badge">20% Off</span>
+      <div class="price">
+        <span>$18.00 USD</span>
+        <del>$24.00 USD</del>
+      </div>
+
+      <div class="dropdowns">
+        <div>
+          <label>Size:</label>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </div>
+        <div>
+          <label>Colour:</label>
+          <select>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+            <option>Blue</option>
+          </select>
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <!-- Box 3 -->
+  <div class="box middle" onclick="selectBox(3)">
+    <input type="radio" name="unit" id="unit3">
+    <label for="unit3">
+      <span>3 Unit</span>
+      <span class="badge popular-badge">30% Off</span>
+      <div class="price">
+        <span>$24.00 USD</span>
+        <del>$30.00 USD</del>
+      </div>
+    </label>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <div class="footer-row">
+      <p class="delivery"><a>Free Delivery</a></p>  
+      <p class="total">Total: $18.00 USD</p>
+    </div>
+    <button class="cart-btn">➕ Add to Cart</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
